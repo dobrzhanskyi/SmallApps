@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTop = new System.Windows.Forms.Label();
             this.lblLeft = new System.Windows.Forms.Label();
             this.lblRight = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.brick4 = new System.Windows.Forms.Label();
             this.brick3 = new System.Windows.Forms.Label();
             this.brick1 = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lblTop
@@ -134,12 +136,17 @@
             this.brick1.TabIndex = 9;
             this.brick1.Text = "\r\n";
             // 
+            // timer
+            // 
+            this.timer.Interval = 10;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(861, 451);
+            this.ClientSize = new System.Drawing.Size(863, 473);
             this.Controls.Add(this.brick1);
             this.Controls.Add(this.brick3);
             this.Controls.Add(this.brick4);
@@ -173,5 +180,6 @@
         private System.Windows.Forms.Label brick4;
         private System.Windows.Forms.Label brick3;
         private System.Windows.Forms.Label brick1;
+        private System.Windows.Forms.Timer timer;
     }
 }
