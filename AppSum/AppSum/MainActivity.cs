@@ -13,6 +13,13 @@ namespace AppSum
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+            EditText numberText = FindViewById<EditText>(Resource.Id.number);
+            Button nextButton = FindViewById<Button>(Resource.Id.buttonstart);
+
+            nextButton.Click += (sender, e) =>
+            {
+                numberText.Text = DigitRiver.NextNumber(numberText.Text);
+            };
         }
     }
 }
