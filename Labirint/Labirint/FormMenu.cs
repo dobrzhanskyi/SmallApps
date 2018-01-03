@@ -38,7 +38,26 @@ namespace Labirint
 
         private void btn_start_Click(object sender, EventArgs e)
         {
+            StartLevel1();
+        }
+        private void StartLevel1()
+        {
             Sound.PlayStart();
+            FormLevel1 level1 = new FormLevel1();
+            DialogResult dr = level1.ShowDialog();
+            if (dr == System.Windows.Forms.DialogResult.OK)
+                StartLevel2();
+
+        }
+        private void StartLevel2()
+        {
+            FormLevel2 level2 = new FormLevel2();
+            DialogResult dr = level2.ShowDialog();
+            if (dr == System.Windows.Forms.DialogResult.OK)
+            {
+                Sound.PlayWin();
+                MessageBox.Show("Вы прошли все уровни лабиринта!", "Победа");
+            }
         }
     }
 }

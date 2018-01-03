@@ -63,7 +63,7 @@
             this.cbSound.Checked = true;
             this.cbSound.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbSound.ForeColor = System.Drawing.Color.Honeydew;
-            this.cbSound.Location = new System.Drawing.Point(192, 318);
+            this.cbSound.Location = new System.Drawing.Point(34, 254);
             this.cbSound.Name = "cbSound";
             this.cbSound.Size = new System.Drawing.Size(77, 17);
             this.cbSound.TabIndex = 2;
