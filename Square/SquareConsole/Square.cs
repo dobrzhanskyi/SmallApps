@@ -3,6 +3,9 @@ namespace SquareConsole
 {
 	class Square : Figure
 	{
+		int side;
+		double square;
+
 		public Square(int side, string name = "square")
 		{
 			this.side = side;

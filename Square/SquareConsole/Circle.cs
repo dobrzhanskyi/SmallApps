@@ -4,6 +4,9 @@ namespace SquareConsole
 {
 	class Circle : Figure
 	{
+		int radius;
+		double square;
+
 		public Circle(int radius, string name = "circle")
 		{
 			this.radius = radius;

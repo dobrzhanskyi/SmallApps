@@ -3,6 +3,10 @@ namespace SquareConsole
 {
 	class Triangle : Figure
 	{
+		int side;
+		int height;
+		double square;
+
 		public Triangle(int side, int height, string name = "triangle")
 		{
 			this.side = side;
